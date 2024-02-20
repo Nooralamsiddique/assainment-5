@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en"data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ==========================Tailwind And Daisyui Config========================== -->    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Assignment-5</title>
+
+</head>
+<body class="font-Raleway">
+
+  <!-- ==========================Nave part========================== --> 
+    <nav class="mt-3 max-w-[195vh] mx-auto">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>            
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-4xl font-extrabold">P-Ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>            
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn bg-[#E8FAE5] text-xl font-bold">Bus<img src="images/bus-icon.png" alt="">
+          </a>
+          
+        </div>
+      </div>
+    </nav>
+    <!-- ==========================Banner Part========================== --> 
+    <section class="max-w-[195vh] mx-auto  sm: md:w-full lg:w-full">
+      <div class="bg-[url('./images/banner.png')] bg-no-repeat bg-cover mt-11
+       flex flex-col justify-center items-center gap-y-8 h-[91vh]">
+        <h1 class="text-[#FFFFFF] text-center md:text-xl lg:text-6xl font-extrabold">End-to-End Travel with <br>
+          <span class="text-[#1DD100]">P Paribahan</span>
+        </h1>
+        <p class="text-xl font-normal text-[#FFFFFF] text-center">Yes, you can run unit tests and view the results directly within the app.
+           The<br>integrated testing features allow for a streamlined .
+        </p>
+        <button onclick="scrollToFooter()" class="btn bg-[#1DD100] border-none">Buy Tickets</button>
+      </div>
+      
+      
+        
+    </section>
+    <!-- ==========================Ticket-cupon and Stoppage Dtls========================== --> 
+    <section class="max-w-[195vh] mx-auto">
+      <div class="flex flex-col gap-y-5 md:flex-row lg:flex-row gap-6 justify-center items-center ">
+        <div class="-mt-11 bg-[#FFFFFF] w-64 h-28 rounded-2xl">
+          <div class="flex gap-4 justify-center items-center pt-5">
+            <div>
+              <img src="images/people.png" alt="">
+            </div>
+            <div>
+              <h2 class="text-3xl font-bold">500K+</h2>
+              <p class="text-xl font-normal">Registered users</p>
+            </div>
+          </div>        
+        </div>
+        <div class="-mt-11 bg-[#FFFFFF] w-64 h-28 rounded-2xl">
+          <div class="flex gap-4 justify-center items-center pt-5">
+            <div>
+              <img src="images/ticket-cupon.png" alt="">
+            </div>
+            <div>
+              <h2 class="text-3xl font-bold">1.7 lacks</h2>
+              <p class="text-xl font-normal">Tickets sold</p>
+            </div>
+          </div>        
+        </div>
+        <div class="-mt-11 bg-[#FFFFFF] w-64 h-24 rounded-2xl">
+          <div class="flex gap-4 justify-center items-center pt-5">
+            <div>
+              <img src="images/stoppage.png" alt="">
+            </div>
+            <div>
+              <h2 class="text-3xl font-bold">80K+</h2>
+              <p class="text-xl font-normal">Rental partners</p>
+            </div>
+          </div>        
+        </div>
+      </div>
+    </section>
+    <!-- ==========================Coupon Section========================== --> 
+    <section class="max-w-[195vh] mx-auto">
+      <div class="mt-11">
+        <h1 class="md:text-xl mt-5 lg:text-4xl font-bold text-center">Best offers for you        
+        </h1>
+        <div class="flex flex-col w-[188vh] gap-4 md:flex-row lg:flex-row">
+          <div class="flex mt-11">
+            <div class="h-[33vh] w-[94vh] bg-[#FFBF0F] flex justify-between rounded-xl">
+              <div class="pt-16 pl-6 w-[60%]">
+                <h2 class="lg:text-4xl font-extrabold">15% OFF</h2>
+                <p class="text-xl font-semibold text-[]">on your next purchase</p>
+                <p class="text-[#03071280]">use by January 2024</p>
+              </div>
+              <div>
+                <img src="images/cupon-devider.png" alt="">
+              </div>
+              <div class="pt-16 w-[40%]">
+                <h4 class="text-2xl font-bold">NEW15</h4>
+                <p>Coupon Code</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="flex mt-11">
+            <div class="h-[33vh] w-[94vh] bg-[#f78c9c] flex justify-between rounded-xl">
+              <div class="pt-16 pl-6 w-[60%]">
+                <h2 class="text-4xl font-extrabold">20% OFF</h2>
+                <p class="text-xl font-semibold text-[]">on your next purchase</p>
+                <p class="text-[#03071280]">use by January 2024</p>
+              </div>
+              <div>
+                <img src="images/cupon-devider.png" alt="">
+              </div>
+              <div class="pt-16 w-[40%]">
+                <h4 class="text-2xl font-bold">Couple 20</h4>
+                <p>Coupon Code</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-16 flex justify-center items-center">
+        <button class="btn font-bold text-xl text-[#1dd100] border-green-600">See All Offers          
+        </button>
+      </div>
+    </section>
+    <!-- ==========================Titel and Ditals========================== --> 
+    <section class="max-w-[195vh] mx-auto">
+      <div class="text-center mt-14">
+        <h3 class="text-4xl font-bold ">P.H Paribahan        
+        </h3>
+        <p class="text-lg mt-6">Yes, you can run unit tests and view the results directly within the app. The integrated <br>
+          testing features allow for a streamlined .
+        </p>
+      </div>
+    </section>
+<!-- ==========================Seat Price and Ditals========================== --> 
+    <section id="seat-price" class="max-w-[195vh] mx-auto">
+      <div class="flex mt-11 pt-6 justify-between">
+        <div class="w-[60%]">
+          <div class="flex mb-6">
+            <img src="images/bus-logo.png" alt="">
+            <div class="ml-3 mr-3">
+              <h6 class="text-3xl font-bold">Greenline Paribahan</h6>
+            <p class="text-lg text-[#03071299]">Coach-009-WEB ! AC_Business</p>
+            </div>
+            <div class="ml-36">
+              <a class="btn bg-[#E8FAE5] text-lg font-medium"><img src="images/seat-green-filled.png" alt="">
+                <span id="totel-seat">40</span>
+                Seats left</a>          
+            </div>        
+          </div>
+          <div class="mt-3 p-9 bg-slate-100 rounded-lg">
+            <div class="flex justify-between mt-12">
+              <p class="text-[#03071299]">Route</p>
+              <p class="text-[#030712]">Dhaka - Sylhet</p>
+            </div>
+            <div class="flex justify-between mt-12">
+              <p class="text-[#03071299]">Departure Time</p>
+              <p class="text-[#030712]">9:00 PM</p>
+            </div>
+            <div class="flex justify-between mt-12 text-[#03071299]">
+              <p class="bg-[#0307120d] p-1 rounded-lg">Boarding Point - Laxmipur</p>
+              <p class="bg-[#0307120d] p-1 rounded-lg">Dropping Point - Bogura</p>
+              <p class="bg-[#0307120d] p-1 rounded-lg">Est. Time - 11 Hour</p>
+            </div>
+          </div>
+        </div>
+        <img class="" src="images/info.png" alt="">      
+        <div class="mt-32 justify-center items-center">
+          <img class="" src="images/fare.png" alt="">
+            <h5 class="text-2xl font-semibold ">550 Taka</h5>
+            <p class="text-xl text-[#03071299]">Per Seat</p>
+          </div>
+        </div>
+    </section>
+<!-- ==========================Select Seat Section========================== --> 
+<section class="max-w-[195vh] mx-auto">
+  <div class="mt-11 bg-[#ffffff]  flex justify-between">
+    <!-- ==========================Seat Start========================== --> 
+    <div id="seet-section" class="w-[60%] p-6 rounded-xl">
+      <h4 class="text-2xl font-semibold">Select Your Seat</h4>      
+        <div class="flex justify-between mt-4">
+          <div class="flex">
+            <img src="images/seat-gray.png" alt="">
+            <p>Available</p>
+          </div>
+          <div class="flex">
+            <img src="images/seat-green-filled.png" alt="">
+            <p class="text-[#1dd100]">Selected</p>
+          </div>
+        </div> 
+        <div class="flex justify-end mt-4 ">
+          <img class="bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg" src="images/Vector.png" alt="">
+        </div>  
+        <div id="seat-a" class="flex justify-between mt-4">
+          <p class="px-4 pb-2 pt-3">A</p>         
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">A1</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn2 bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">A2</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">A3</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">A4</p>
+        </div>   
+        <div class="flex justify-between mt-4">
+          <p class="px-4 pb-2 pt-3">B</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">B1</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">B2</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">B3</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">B4</p>
+        </div>   
+        <div class="flex justify-between mt-4">
+          <p class="px-4 pb-2 pt-3">C</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">C1</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">C2</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">C3</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">C4</p>
+        </div>   
+        <div class="flex justify-between mt-4">
+          <p  class="px-4 pb-2 pt-3">D</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">D1</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">D2</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">D3</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">D4</p>
+        </div>   
+        <div class="flex justify-between mt-4">
+          <p class="px-4 pb-2 pt-3">E</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">E1</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">E2</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">E3</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">E4</p>
+        </div>   
+        <div class="flex justify-between mt-4">
+          <p class="px-4 pb-2 pt-3">F</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">F1</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">F2</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">F3</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">F4</p>
+        </div>   
+        <div class="flex justify-between mt-4">
+          <p class="px-4 pb-2 pt-3">G</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">G1</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">G2</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">G3</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">G4</p>
+        </div>   
+        <div class="flex justify-between mt-4">
+          <p class="px-4 pb-2 pt-3">H</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">H1</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">H2</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">H3</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">H4</p>
+        </div>   
+        <div class="flex justify-between mt-4">
+          <p class="px-4 pb-2 pt-3">I</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">I1</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">I2</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">I3</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">I4</p>
+        </div>   
+        <div class="flex justify-between mt-4">
+          <p class="px-4 pb-2 pt-3">J</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">J1</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">J2</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">J3</p>
+          <p onclick="toggleBackgroundColor(this)" class="add-btn bg-[#0307120d] px-4 pb-2 pt-3 rounded-lg">J4</p>
+        </div>
+      </div>
+  <!-- ==========================Seat End========================== -->     
+    <div class="w-[38%] p-6 rounded-xl">
+      <div>
+        <h4 class="text-2xl font-semibold">Select Your Seat</h4>
+      </div>
+      <div class="flex justify-between mt-14">
+        <p>Seat
+          <span id="count-seat">0</span>
+        </p>
+        <p>Class</p>
+        <p>Price</p>
+      </div>
+      <hr class="mt-3">
+      <div class="mt-3 mb-5">
+        <div class="flex justify-between text-[#03071299] bg-[#0307120d] rounded-md ">
+          <li id="select-continer" class="flex gap-x-5">
+            <p class=""></p>
+          <p class=""></p>
+          <p class=""></p>
+          </li>
+        </div>
+        <div class="flex justify-between text-[#03071299] bg-[#0307120d] rounded-md">
+          <p class=""></p>
+          <p class=""></p>
+          <p class=""></p>
+        </div>
+      </div>
+
+      <hr class="">
+
+      <div class="flex justify-between mt-8">
+        <p>Total Price</p>
+        <p>BDT
+          <span id="totel-cost">0</span>
+        </p>        
+      </div>
+      <div class="flex justify-between mt-4 rounded-xl">
+        <input id="inputField" class="pr-28 pl-5 rounded-lg border-none" type="text" placeholder="Have any copupon?">                
+        <button id="submitButton" class="btn bg-[#1DD100] border-none ">Apply</button>
+      </div>
+
+      <div class="flex justify-between mt-8">
+        <p>Grand Total</p>
+        <p>BDT
+          <span id="grand-totel">0</span>
+        </p>        
+      </div>
+      <div class="mt-6">
+        <p>Passenger Name*</p>
+        <input class="mt-1 pr-48 pl-5 py-3 rounded-lg border-none" type="text" 
+        placeholder="Enter Your Name">
+      </div>
+      <div class="mt-6">
+        <p>Phone Number*</p>
+        <input type="number" name="" id="" class="mt-1 pr-48 pl-5 py-3 rounded-lg border-none" 
+        placeholder="Enter Your Phone Number">
+      </div>
+      <div class="mt-6">
+        <p>Email id</p>
+        <input type="email" name="" id="" class="mt-1 pr-48 pl-5 py-3 rounded-lg border-none" 
+        placeholder="Enter your email id">
+      </div>
+      <div>
+        <button class="text-xl font-extrabold text-white bg-[#1DD100] 
+        mt-5 px-44 py-3 rounded-2xl">Next</button>
+      </div>
+      <div class="flex mt-4 gap-10">
+        <p class="ml-10">Terms and Conditions</p>        
+        <p>Cancellation Policy</p>
+      </div>
+      
+    </div>    
+  </div>
+</section>
+
+<section class="max-w-[195vh]">
+  <div class="artboard artboard-horizontal phone-1 border-[5px] mx-auto mt-9 mb-7 rounded-lg">    
+    <div class="justify-center items-center">
+      <img class="ml-52 mt-1" src="images/success.png" alt="">
+    <h3 class="text-[#43ff64d9] text-center mt-2">SUCCESS</h3>
+    <p class="text-center mt-3">Thank you for Booking Our Bus Seats. 
+      We are working hard to find the best service and deals for you. 
+      </p>
+      <p class="text-center">Shortly you will find a confirmation in your email.        
+      </p>
+      <button class="btn bg-[#43ff64d9] rounded-2xl px-16 ml-44 mt-3">Continue</button>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================Footer Section========================== --> 
+<footer class="max-w-[240vh] mx-auto">
+  <section class="">
+    <div class="bg-[#030712] h-60 px-20 pt-10 flex justify-between "> 
+          <div class="ml-5">
+            <h6 class="text-4xl font-extrabold text-white">P-Ticket</h6>
+            <p class="text-white">P-Ticket is a digital platform to make your <br>daily commuting better.</p>
+          </div>     
+          <div>
+            <h6 class="text-xl font-semibold text-white">Download our app            
+            </h6> 
+            <div class="flex gap-2">
+              <img src="images/playstore.png" alt="">
+              <div>
+                <p class="text-white">GET IT ON</p>
+               <h6 class="text-white">Google Play</h6>               
+              </div>
+            </div>
+          </div>
+    </div>
+    <hr>
+
+    <div class="flex justify-between bg-[#030712] h-36 px-20 pt-7">
+      <div>
+        <p>@all rights reserved, P-Ticket services limited.2024</p>
+      </div>
+      <div class="flex gap-3 text-white">
+        <p>Terms & condition</p>
+        <p>Return & refund policy</p>
+        <p>Privacy policy</p>
+      </div>
+    </div>
+     
+  </section>
+
+</footer>
+<script src="script/utility.js"></script>
+<script src="script/ass.js"></script>
+</body>
+</html>
